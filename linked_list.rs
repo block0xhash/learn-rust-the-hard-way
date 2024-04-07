@@ -1,4 +1,3 @@
-
 use crate::List::*;
 
 enum List {
@@ -36,7 +35,7 @@ impl List {
             // instead take a reference to the tail
             Cons(_, ref tail) => 1 + tail.len(),
             // Base Case: An empty list has zero length
-            Nil => 0
+            Nil => 0,
         }
     }
 
@@ -47,10 +46,10 @@ impl List {
                 // `format!` is similar to `print!`, but returns a heap
                 // allocated string instead of printing to the console
                 format!("{}, {}", head, tail.stringify())
-            },
+            }
             Nil => {
                 format!("Nil")
-            },
+            }
         }
     }
 }
