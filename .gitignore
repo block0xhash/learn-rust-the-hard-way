@@ -3,3 +3,10 @@ out/
 target/
 node_modules/
 .env
+# Ignore all files without extensions
+*
+# Unignore all files with extensions
+# !*.*
+# Unignore all directories
+# !*/
+
